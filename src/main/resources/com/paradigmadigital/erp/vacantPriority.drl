@@ -1,0 +1,23 @@
+package com.paradigmadigital.erp;
+
+
+import com.paradigmadigital.erp.domain.aggregate.*;
+import com.paradigmadigital.erp.domain.entity.*;
+import com.paradigmadigital.erp.domain.aggregate.*;
+import java.lang.*;
+import java.util.Date;
+
+
+
+/**
+* JIRA-167  "Requeriment vacant is not completed"
+**/
+rule "Jira_167 Default Status"
+	when
+     	$t : ProjectEntity()
+    then
+    	System.out.println("holaCaracola");
+    	//throw new Exception("fallaco en drools");
+
+   		
+end
